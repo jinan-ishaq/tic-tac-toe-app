@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: radial-gradient(#3b1761, #1a0630);
+  text-align: center;
+  min-height: 90vh;
+  font-family: 'Times New Roman', Times, serif;
+}
