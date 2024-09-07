@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 
 const GameOver = ({ isWinner, handleReMatchTheGame }) => {
   return (
-    <section className="bg-custom-rgba absolute top-0 w-[90%] h-full flex flex-col text-white justify-center	mx-auto	">
-      <p className="text-6xl text-[#af79ea] text mb-8">GAME OVER</p>
-      <p className="text-4xl mb-12">
+    <section className="bg-custom-rgba absolute top-0 w-[90%] md:w-[100%] h-full flex flex-col text-white justify-center	mx-auto	">
+      <p className="text-4xl md:text-6xl text-[#af79ea] text mb-8">GAME OVER</p>
+      <p className="text-2xl md:text-4xl mb-12">
         {isWinner ? `${isWinner} Win!` : "It Is A Draw!"}
       </p>
       <button
