@@ -2,12 +2,11 @@ import { useState } from "react";
 import GameBoard from "./components/GameBoard";
 import GameOver from "./components/GameOver";
 import Header from "./components/Header";
-import Logs from "./components/Logs";
 import Players from "./components/Players";
 import { deriveActivePlayer } from "./helpers/deriveActivePlayer";
 import { deriveWinner } from "./helpers/deriveWinner";
 
-const INIT_GAME_BOEARD = [
+const INIT_GAME_BOARD = [
   [null, null, null],
   [null, null, null],
   [null, null, null],
@@ -24,7 +23,7 @@ function App() {
 
   const activePlayer = deriveActivePlayer(gameTurns);
 
-  let gameBoard = [...INIT_GAME_BOEARD.map((innerArray) => [...innerArray])];
+  let gameBoard = [...INIT_GAME_BOARD.map((innerArray) => [...innerArray])];
 
   for (const turn of gameTurns) {
     const { square, player } = turn;
@@ -83,7 +82,6 @@ function App() {
           />
         ) : undefined}
       </main>
-      <Logs turns={gameTurns} />
     </>
   );
 }

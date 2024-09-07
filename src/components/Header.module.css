@@ -1,6 +1,14 @@
 .header {
-  background: linear-gradient(40deg, #35023a, #ea00ff, #03d5ff, #03d5ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 8px rgba(97, 96, 96, 0.5));
+  -webkit-text-stroke: 1px #743dae;
+  background: linear-gradient(90deg, #35023a, #ea00ff, #03d5ff, #03d5ff);
+  background-clip: text;
+  color: transparent;
+  background-position: -1400px 0;
+  animation: backwardscolor 7s linear infinite alternate;
+}
+
+@keyframes backwardscolor{
+  100%{
+    background-position: 0 0;
+  }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
 const GameBoard = ({ onSelectSquare, board }) => {
   return (
@@ -23,5 +23,10 @@ const GameBoard = ({ onSelectSquare, board }) => {
     </ol>
   );
 };
+
+GameBoard.propTypes = {
+  onSelectSquare:PropTypes.func.isRequired,
+  board:PropTypes.array.isRequired,
+}
 
 export default GameBoard;
