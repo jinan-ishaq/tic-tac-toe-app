@@ -2,8 +2,6 @@
 
 **I have created a responsive tic tac toe game using React + Vite**.
 
-![tic tac toe](./src/assets/view.png.png)
-
 # Live Demo
 
 - https://jinan-ishaq.github.io/tic-tac-toe-app/
